@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1627;
+}
+
+li {
+  list-style: none;
+}
+
+.titles {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  color: #fff;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover{
+  border: 1px solid #fff;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu li:hover {
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.menu li {
+  padding: 5px 14px;
+}
+ /* MENU SUSPENSO */
+input[type=checkbox]{
+  display: none;
+} 
+ /*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+ /* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu { 
+    display:none;
+    position: absolute;
+    width: 200px;
+    right: 0;
+    left: auto;
+    text-align: center;
+    padding: 16px 0;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    transition: 0.3s;
+  }
+ .menu li:hover {
+  display: inline-block;
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+  input[type=checkbox]:checked ~ .menu{
+    display: block;
+    background-color: #7957e0;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .stack-list
+  {
+    max-width: 200px;
+  }
+}
+
+#wrapper
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.titulo-container
+{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#titulo
+{
+  max-width: 600px;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 93px;
+  color: #fff;
+}
+
+#titulo-desc
+{
+  padding: 0 50px;
+  max-width: 600px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 50px;
+}
+
+.socials-container
+{
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.socials-container i 
+{
+  font-size: 30px;
+}
+
+.socials-container a 
+{
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.socials-container a:hover
+{
+  transform: scale(1.2);
+}
+
+.img-teste
+{
+  margin: auto;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: #7957e0;
+  border-radius: 45% 55% 44% 56% / 23% 24% 76% 77% ;
+  background-image: url(src/logo_ian.png);
+  background-size: cover;
+}
+
+.img-teste img 
+{
+  max-width: 100%;
+  opacity: 0;
+}
+
+.about-container
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.about-container h1
+{
+  margin-bottom: 20px;
+}
+
+.about-text
+{
+  margin: auto;
+  max-width: 400px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.cv-button
+{
+  margin: auto;
+  margin-bottom: 50px;
+  width: 100px;
+  height: 40px;
+  background-color: #7957e0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.cv-button:hover
+{
+  border: 1px solid #fff;
+  transform: scale(1.1);
+}
+
+.stack-container
+{
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stack-list
+{
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.stack-list li
+{
+  padding: 5px;
+}
+
+.stack-list i 
+{
+  font-size: 30px;
+}
+
+.card-container
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.card-wrapper
+{
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-item
+{
+  margin: 0 10px;
+  height: 350px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.card-image
+{
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img1
+{
+  background-image: url(src/climats-image.png);
+}
+
+.img2
+{
+  background-image: url(src/costs-image.png);
+}
+
+footer
+{
+  background-color: #7957e0;
+  color: #fff;
+}
+
+.footer-content
+{
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a 
+{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover
+{
+  transform: scale(1.2);
+}
+
+.footer-social
+{
+  height: 100px;
+  padding: 20px 10px;
+}
+
+.footer-social i 
+{
+  font-size: 30px;
+}
+
+.footer-social a
+{
+  padding: 5px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer-social a:hover
+{
+  transform: scale(1.2);
+}
+
+.footer-credits
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
