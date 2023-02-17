@@ -1,4 +1,4 @@
-# Protifólio profissional
+# Portifólio profissional
 
 <p>Página web para exibir meus conhecimentos e experiências no ramo de desenvolvimento.</p>
 
