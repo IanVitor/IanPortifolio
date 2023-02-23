@@ -24,8 +24,8 @@
     />
     <title>Ian Vitor</title>
   </head>
+
   <body>
-  
     <section class="content-container">
       <header>
         <nav class="navbar">
@@ -33,10 +33,10 @@
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <div class="menu">
-              <li><a href="/">Início</a></li>
-              <li><a href="/">Sobre</a></li>
-              <li><a href="/">Projetos</a></li>
-              <li><a href="/">Contato</a></li>
+              <li><a href="#wrapper">Início</a></li>
+              <li><a href="#about-container">Sobre</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#contacts">Contato</a></li>
             </div>
           </ul>
         </nav>
@@ -44,12 +44,11 @@
 
       <section id="wrapper">
         <div class="titulo-container">
-          <h1 id="titulo">< Ian Vitor /></h1>
-          <p id="titulo-desc">Desenvolvedor Front End/ Back End</p>
+          <h1 id="titulo">&lt; Ian Vitor /&gt;</h1>
+          <p id="titulo-desc">Desenvolvedor Front End/Back End</p>
         </div>
 
         <div class="img-teste"></div>
-
       </section>
 
       <div class="socials-container">
@@ -60,12 +59,24 @@
       </div>
     </section>
 
-    <section class="about-container">
+    <section id="about-container" class="about-container">
       <h1 class="titles">Sobre mim:</h1>
       <p class="about-text">
-        Sou estudante de Ciência da Computação e aspirante a desenvolvedor Front End. Comecei a me interessar por programação no final do ensino médio, onde descobri que, com tecnologia e criatividade, podemos criar qualquer coisa.
+        Sou estudante de Ciência da Computação e aspirante a desenvolvedor Front
+        End. Comecei a me interessar por programação no final do ensino médio,
+        onde descobri que, com tecnologia e criatividade, podemos criar qualquer
+        coisa.
       </p>
-      <button class="cv-button">Dowload CV <i class="fa-solid fa-download"></i></button>
+
+      <a
+        class="dowload-container"
+        href="src/CurriculoIanVitor.pdf"
+        download="CurriculoIanVitor"
+      >
+        <button class="cv-button">
+          Dowload CV <i class="fa-solid fa-download"></i>
+        </button>
+      </a>
     </section>
 
     <section class="stack-container">
@@ -82,72 +93,104 @@
       </ul>
     </section>
 
-    <section class="projects-container">
+    <section id="projects" class="projects-container">
       <h1 class="titles">Projetos:</h1>
 
       <div class="card-container">
         <div class="card-wrapper">
-          <div class="card-item">
-          <div class="card-image img1"></div>
-          <h2 class="card-title">Climats</h2>
-          <p class="card-text">
-            Site de previsão de tempo, com a API Open Weather.
-          </p>
-          <ul class="tech-list">
-            <li class="tech-list-item">
-              <i class="devicon-html5-plain colored"></i>
-            </li>
-            <li class="tech-list-item">
-              <i class="devicon-css3-plain colored"></i>
-            </li>
-            <li class="tech-list-item">
-              <i class="devicon-javascript-plain colored"></i>
-            </li>
-          </ul>
-          </div>
-          <div class="card-item">
-            <div class="card-image img2"></div>
-            <h2 class="card-title">Costs</h2>
-            <p class="card-text">
-              SPA com React para gerenciar projetos.
-            </p>
-            <ul class="tech-list">
-              <li class="tech-list-item">
-                <i class="devicon-html5-plain colored"></i>
-              </li>
-              <li class="tech-list-item">
-                <i class="devicon-css3-plain colored"></i>
-              </li>
-              <li class="tech-list-item">
-                <i class="devicon-javascript-plain colored"></i>
-              </li>
-            </ul>
-          </div>
-          <div class="card-item">
-            <div class="card-image"></div>
-            <h2 class="card-title">Climats</h2>
-            <p class="card-text">
-              Site de previsão de tempo, com a API Open Weather.
-            </p>
-            <ul class="tech-list">
-              <li class="tech-list-item">
-                <i class="devicon-html5-plain colored"></i>
-              </li>
-              <li class="tech-list-item">
-                <i class="devicon-css3-plain colored"></i>
-              </li>
-              <li class="tech-list-item">
-                <i class="devicon-javascript-plain colored"></i>
-              </li>
-            </ul>
-          </div>
+          <a href="https://ianvitor.github.io/Climats/" target="_blank">
+            <div class="card-item">
+              <div class="card-image img1"></div>
+              <h2 class="card-title">Climats</h2>
+              <p class="card-text">
+                Site de previsão de tempo, com a API Open Weather.
+              </p>
+              <ul class="tech-list">
+                <li class="tech-list-item">
+                  <i class="devicon-html5-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-css3-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-javascript-plain colored"></i>
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a href="https://github.com/IanVitor/Project_Costs" target="_blank">
+            <div class="card-item">
+              <div class="card-image img2"></div>
+              <h2 class="card-title">Costs</h2>
+              <p class="card-text">
+                Spa para gerenciar projetos. 
+              </p>
+              <ul class="tech-list">
+                <li class="tech-list-item">
+                  <i class="devicon-html5-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-css3-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-javascript-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-react-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-nodejs-plain colored"></i>
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a href="https://ianvitor.github.io/Calculadora-imc/" target="_blank">
+            <div class="card-item">
+              <div class="card-image img3"></div>
+              <h2 class="card-title">Calculadora IMC</h2>
+              <p class="card-text">
+                Projeto feito para calcular o IMC.
+              </p>
+              <ul class="tech-list">
+                <li class="tech-list-item">
+                  <i class="devicon-html5-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-css3-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-javascript-plain colored"></i>
+                </li>
+              </ul>
+            </div>
+          </a>
+          <a href="https://ianvitor.github.io/Buscador-de-Cep/" target="_blank">
+            <div class="card-item">
+              <div class="card-image img4"></div>
+              <h2 class="card-title">Buscador de CEP</h2>
+              <p class="card-text">
+                Ferramenta que exibe informações sobre endereço, apartir do CEP.
+              </p>
+              <ul class="tech-list">
+                <li class="tech-list-item">
+                  <i class="devicon-html5-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-css3-plain colored"></i>
+                </li>
+                <li class="tech-list-item">
+                  <i class="devicon-javascript-plain colored"></i>
+                </li>
+              </ul>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Conteúdo do rodapé-->
 
-    <footer>
+    <footer id="contacts">
       <div class="footer-content">
         <div class="footer-logo">
           <h2>Ian Vitor</h2>
@@ -155,8 +198,8 @@
         </div>
 
         <div class="footer-links">
-          <a href="#">Portifólio</a>
-          <a>Contate me</a>
+          <a href="index.html">Portifólio</a>
+          <a href="mailto:ianvitor976@gmail.com">Contate me</a>
         </div>
       </div>
 
